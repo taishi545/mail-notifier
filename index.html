@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mail-notifier</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Hiragino Sans", sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; line-height: 1.7; color: #1f2937; background: #fbfbf8; }
+  h1 { font-size: 1.8em; margin-bottom: 0.2em; }
+  h2 { font-size: 1.2em; margin-top: 2em; }
+  a { color: #1d4ed8; }
+  .en { color: #4b5563; }
+</style>
+</head>
+<body>
+<h1>mail-notifier</h1>
+<p>個人用の通知ツールです。開発者本人の Gmail に、あらかじめ決めた差出人からメールが届いたとき、その差出人の名前と件名を、開発者本人の Discord のチャンネルに通知します。</p>
+<p class="en">A personal notification tool. When an email from one pre-configured sender arrives in the developer's own Gmail inbox, it posts the sender's name and the subject line to the developer's own Discord channel.</p>
+
+<h2>使っている Google のデータ / Google data used</h2>
+<ul>
+  <li>Gmail の見出し（差出人・件名などのメタデータ）だけを読みます。本文や添付ファイルは読みません（スコープ：<code>gmail.metadata</code>）。</li>
+  <li class="en">Only message metadata (headers such as From and Subject) is read. Message bodies and attachments are never accessed (scope: <code>gmail.metadata</code>).</li>
+</ul>
+
+<h2>利用者 / Users</h2>
+<p>このツールは開発者本人だけが、自分のアカウントで使うためのものです。ほかの人に向けたサービスではありません。</p>
+<p class="en">This tool is used only by its developer, with the developer's own account. It is not offered to anyone else.</p>
+
+<p><a href="privacy.html">プライバシーポリシー / Privacy Policy</a></p>
+</body>
+</html>
